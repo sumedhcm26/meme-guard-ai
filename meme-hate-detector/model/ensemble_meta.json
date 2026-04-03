@@ -1,0 +1,40 @@
+{
+    "clip_model": "ViT-L-14",
+    "clip_pretrain": "openai",
+    "seeds": [
+        42,
+        55,
+        68
+    ],
+    "val_auroc_per_seed": [
+        0.7438879999999999,
+        0.7361120000000001,
+        0.74504
+    ],
+    "ensemble_val_auroc": 0.7632159999999999,
+    "best_threshold": 0.3,
+    "cfg": {
+        "data_dir": "/kaggle/input/datasets/parthplc/facebook-hateful-meme-dataset/data",
+        "train_jsonl": "/kaggle/input/datasets/parthplc/facebook-hateful-meme-dataset/data/train.jsonl",
+        "dev_jsonl": "/kaggle/input/datasets/parthplc/facebook-hateful-meme-dataset/data/dev.jsonl",
+        "test_jsonl": "/kaggle/input/datasets/parthplc/facebook-hateful-meme-dataset/data/test.jsonl",
+        "img_dir": "/kaggle/input/datasets/parthplc/facebook-hateful-meme-dataset/data/img",
+        "clip_model": "ViT-L-14",
+        "clip_pretrain": "openai",
+        "embed_dim": 768,
+        "fusion_heads": 8,
+        "hidden_dim": 512,
+        "dropout": 0.4,
+        "batch_size": 32,
+        "lr": 0.0003,
+        "weight_decay": 0.01,
+        "epochs": 40,
+        "warmup_pct": 0.1,
+        "label_smooth": 0.1,
+        "mixup_alpha": 0.2,
+        "grad_clip": 1.0,
+        "patience": 7,
+        "cache_dir": "/kaggle/working/clip_cache",
+        "n_seeds": 3
+    }
+}

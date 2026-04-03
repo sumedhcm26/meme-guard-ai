@@ -1,0 +1,19 @@
+PLACE YOUR TRAINED MODEL WEIGHTS HERE
+======================================
+
+Expected filename : model.pth
+Source file       : best_model_seed42.pt
+
+Steps:
+  1. Copy (or rename) your trained weights file to this directory.
+  2. Rename it to  model.pth
+  3. Start the server:  python app.py
+
+Example:
+  cp /path/to/best_model_seed42.pt model/model.pth
+
+The model will be loaded via:
+  model.load_state_dict(torch.load("model/model.pth", map_location=device))
+
+If this file is missing, the server will start with random weights
+and log a warning — predictions will not be meaningful.

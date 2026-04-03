@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual env
+venv/
+env/
+
+# Model files (IMPORTANT)
+model/*.pt
+model/*.json
+
+# Cache
+.cache/

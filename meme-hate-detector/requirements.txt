@@ -1,0 +1,31 @@
+# ─────────────────────────────────────────────────────────────
+# requirements.txt  –  AI Meme Hate Detection System
+# Python 3.10+ recommended
+# ─────────────────────────────────────────────────────────────
+
+# ── Web framework ─────────────────────────────────────────────
+flask>=3.0.0
+werkzeug>=3.0.0
+
+# ── Deep learning ─────────────────────────────────────────────
+# Install PyTorch for your platform:
+#   CPU only  : pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#   CUDA 12.1 : pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+torch>=2.1.0
+torchvision>=0.16.0
+
+# ── CLIP backbone (used in the training notebook) ─────────────
+open-clip-torch>=2.24.0
+ftfy>=6.1.1
+
+# ── Image processing ──────────────────────────────────────────
+Pillow>=10.0.0
+
+# ── Numerics ──────────────────────────────────────────────────
+numpy>=1.24.0
+
+# ── JSON / config reading ─────────────────────────────────────
+# (stdlib json is sufficient — no extra package needed)
+
+# ── Optional: faster JSON ─────────────────────────────────────
+# ujson>=5.8.0
