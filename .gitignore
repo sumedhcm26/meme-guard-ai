@@ -1,15 +1,49 @@
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
 
-# Virtual env
+# Virtual environments
 venv/
+.venv/
 env/
+ENV/
 
-# Model files (IMPORTANT)
+# Model weights (large binary files)
+model/*.pth
 model/*.pt
-model/*.json
+model/*.bin
 
-# Cache
-.cache/
+# Uploaded images (runtime artefacts)
+static/uploads/*
+!static/uploads/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Environment variables
+.env
+*.env
+
+# Logs
+*.log
+logs/
+
+# CLIP model cache
+clip_cache/
